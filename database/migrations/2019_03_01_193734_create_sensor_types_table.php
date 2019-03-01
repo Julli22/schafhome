@@ -15,9 +15,12 @@ class CreateSensorTypesTable extends Migration
     {
         Schema::create('sensor_types', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('slug');
             $table->string('name');
             $table->string('unit');
             $table->timestamps();
+
+            $table->unique('slug');
         });
     }
 
