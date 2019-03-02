@@ -11,4 +11,5 @@
 |
 */
 
-Route::resource('devices', 'DevicesController');
+Route::get('/', 'PagesController@home');
+Route::get('devices', 'DevicesController@index');

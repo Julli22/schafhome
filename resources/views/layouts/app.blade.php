@@ -13,11 +13,14 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset="utf-8"></script>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
     <body>
-        @yield('content')
+        <div id="app">
+            @yield('content')
+        </div>
     </body>
 </html>
