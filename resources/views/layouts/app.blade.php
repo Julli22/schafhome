@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
     </head>
     <body>
+        @include('inc.nav')
         <div id="app">
             @yield('content')
         </div>
